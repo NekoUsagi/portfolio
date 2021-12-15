@@ -14,7 +14,7 @@ body {
 
 
 .navbar {
-    background-color: #1d1c1b !important;
+    background-color: #ffe5e9 !important;
 }
 
 
@@ -31,6 +31,7 @@ body {
 .carousel-caption1 {
     width: 400px;
     height: 400px;
+    color:#444243;
 }
 
 .carousel-caption2 {
@@ -38,6 +39,7 @@ body {
     height: 300px;
     margin-left: 50%;
     margin-bottom: 50px;
+    color: #444243;
 }
 
 .carousel-caption3 {
@@ -58,7 +60,7 @@ body {
 
 
 footer {
-    background-color: black;
+    background-color:#ffe5e9;
     height: 200px;
     margin-top: 30px;
     padding-top: 20px;
