@@ -19,6 +19,14 @@
 font-family: 'Roboto', sans-serif; -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>Final</title>
+<!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+<script src="cart.js" async></script>
 
 </head>
 
@@ -71,12 +79,15 @@ font-family: 'Roboto', sans-serif; -->
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+
             <div class="modal-body">
-              <table class="show-cart table"><tr><td>Makeup1</td><td>(1)</td><td><div class="input-group"></div></td><td></td><td>15.00</td></tr></table>
-              <table class="show-cart table"><tr><td>Makeup2</td><td>(1)</td><td><div class="input-group"></div></td><td></td><td>15.00</td></tr></table>
-              <table class="show-cart table"><tr><td>Makeup3</td><td>(1)</td><td><div class="input-group"></div></td><td></td><td>15.00</td></tr></table>
-            </div>
-            <div class="text-right pr-1 pr-md-3 pr-lg-5">Total price: $ <span class="total-cart">45</span></div>
+
+        <div class="cart-items">        
+            
+        </div>
+    </div>
+            
+            <div class="cart-total text-right pr-1 pr-md-3 pr-lg-5"><strong class="cart-total-title">Total: </strong> <span class="cart-total-price">$0</span></div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               <a href="checkout.html" type="button" class="btn btn-dark">Checkout</a>
@@ -108,7 +119,7 @@ font-family: 'Roboto', sans-serif; -->
                   </div>
             </div>
             <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1526045405698-cf8b8acc4aaf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80" class="d-block w-100" alt="...">
+                <img src="https://images.unsplash.com/photo-1559828350-dbd975c52096?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" class="d-block w-100" alt="...">
 
                 <div class="carousel-caption carousel-caption2 d-none d-md-block bg-light border border-dark">
                     <h5 class="display-4 text-left ml-3 mt-4" style="font-family: 'Abril Fatface', cursive;">Eyeshadow on Sale until Janurary!</h5>
@@ -143,33 +154,33 @@ font-family: 'Roboto', sans-serif; -->
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1 class="text-light mt-5" style="font-family: 'Abril Fatface', cursive;">Top Sellers</h1>
+            <h1 class="text-dark mt-5" style="font-family: 'Abril Fatface', cursive;">Top Sellers</h1>
             <div class="card-deck">
                 <div class="card" style="background-color:#ffedf1;;">
-                    <img src="https://images.unsplash.com/photo-1598452963314-b09f397a5c48?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1101&q=80" class="card-img-top sale-img" alt="...">
+                    <img class="shop-item-image" src="https://images.unsplash.com/photo-1598452963314-b09f397a5c48?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1101&q=80" class="card-img-top sale-img" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Abril Fatface', cursive;">Gucci Makeup Set</h5>
-                        <p class="card-text">$30</p>
+                        <h5 class="card-title shop-item-title" style="font-family: 'Abril Fatface', cursive;">Gucci Makeup Set</h5>
+                        <p class="card-text shop-item-price">$30</p>
                         <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-                        <button class="btn btn-dark btn-block hvr-outline-in" type="button" style="font-family: 'Roboto', sans-serif;"id="btn" onclick="cot()">Add to Cart</button>
+                        <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button" style="font-family: 'Roboto', sans-serif;"id="btn" onclick="cot()">Add to Cart</button>
                     </div>
                 </div>
                 <div class="card" style="background-color:#ffedf1;;">
-                    <img src="https://images.unsplash.com/photo-1559828350-dbd975c52096?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" class="card-img-top sake-img" alt="...">
+                    <img class="shop-item-image"src="https://images.unsplash.com/photo-1559828350-dbd975c52096?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" class="card-img-top sake-img" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title" style="font-family: 'Abril Fatface', cursive;">Uncover Makeup Set</h5>
-                        <p class="card-text">$25</p>
+                        <h5 class="card-title shop-item-title" style="font-family: 'Abril Fatface', cursive;">Uncover Makeup Set</h5>
+                        <p class="card-text shop-item-price">$25</p>
                         <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-                        <button class="btn btn-dark btn-block hvr-outline-in" type="button"style="font-family: 'Roboto', sans-serif;"id="btn" onclick="cot()">Add to Cart</button>
+                        <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"style="font-family: 'Roboto', sans-serif;"id="btn" onclick="cot()">Add to Cart</button>
                     </div>
                 </div>
                 <div class="card" style="background-color:#ffedf1;;">
-                    <img src="https://images.unsplash.com/photo-1588959396534-db4a48af6b04?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" class="card-img-top sale-img" alt="...">
+                    <img class="shop-item-image" src="https://images.unsplash.com/photo-1588959396534-db4a48af6b04?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" class="card-img-top sale-img" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"style="font-family: 'Abril Fatface', cursive;">Makeup Remover Set</h5>
-                        <p class="card-text">$20</p>
+                        <h5 class="card-title shop-item-title"style="font-family: 'Abril Fatface', cursive;">Makeup Remover Set</h5>
+                        <p class="card-text shop-item-price">$20</p>
                         <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-                        <button class="btn btn-dark btn-block hvr-outline-in" type="button"style="font-family: 'Roboto', sans-serif;"id="btn" onclick="cot()">Add to Cart</button>
+                        <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"style="font-family: 'Roboto', sans-serif;"id="btn" onclick="cot()">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -278,13 +289,6 @@ font-family: 'Roboto', sans-serif; -->
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
-
 
 <script type="text/javascript">
     var btn = document.getElementById('btn');
@@ -296,6 +300,10 @@ font-family: 'Roboto', sans-serif; -->
       console.log(count);
     }
   
+  </script>
+
+  <script>
+
   </script>
 
 </body>

@@ -19,7 +19,14 @@
 font-family: 'Roboto', sans-serif; -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>Final</title>
-
+<!--jquery-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
+<script src="cart.js" async></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -66,19 +73,19 @@ font-family: 'Roboto', sans-serif; -->
         </button>
       </div>
       <div class="modal-body">
-        <table class="show-cart table"><tr><td>Makeup1</td><td>(1)</td><td><div class="input-group"></div></td><td></td><td>15.00</td></tr></table>
-        <table class="show-cart table"><tr><td>Makeup2</td><td>(1)</td><td><div class="input-group"></div></td><td></td><td>15.00</td></tr></table>
-        <table class="show-cart table"><tr><td>Makeup3</td><td>(1)</td><td><div class="input-group"></div></td><td></td><td>15.00</td></tr></table>
-      </div>
-      <div class="text-right pr-1 pr-md-3 pr-lg-5">Total price: $ <span class="total-cart">45</span></div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <a href="checkout.html" type="button" class="btn btn-dark">Checkout</a>
-      </div>
+        <div class="cart-items">        
+            
+        </div>
     </div>
-  </div>
-</div>
-
+            
+            <div class="cart-total text-right pr-1 pr-md-3 pr-lg-5"><strong class="cart-total-title">Total: </strong> <span class="cart-total-price">$0</span></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a href="checkout.html" type="button" class="btn btn-dark">Checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -89,36 +96,36 @@ font-family: 'Roboto', sans-serif; -->
 
       <div class="card-deck">
         <div class="card text-center">
-          <img
+          <img class="shop-item-image"
             src="https://images.unsplash.com/photo-1529634885322-b17ffaf423ac?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="font-family: 'Abril Fatface', cursive;">Airspun Powder</h5>
-            <p class="card-text">$15</p>
+            <h5 class="card-title shop-item-title" style="font-family: 'Abril Fatface', cursive;">Airspun Powder</h5>
+            <p class="card-text shop-item-price">$15</p>
             <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
-          <img
+          <img class="shop-item-image"
             src="https://images.unsplash.com/photo-1599733589046-10c005739ef9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="font-family: 'Abril Fatface', cursive;">Forever</h5>
-            <p class="card-text">$15</p>
+            <h5 class="card-title shop-item-title" style="font-family: 'Abril Fatface', cursive;">Forever</h5>
+            <p class="card-text shop-item-price">$15</p>
             <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-            <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
+            <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
-          <img
+          <img class="shop-item-image"
             src="https://images.unsplash.com/photo-1530863138121-03aea5f46fd4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="font-family: 'Abril Fatface', cursive;">NudebyNature</h5>
-            <p class="card-text">$15</p>
+            <h5 class="card-title shop-item-title" style="font-family: 'Abril Fatface', cursive;">NudebyNature</h5>
+            <p class="card-text shop-item-price">$15</p>
             <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -136,36 +143,36 @@ font-family: 'Roboto', sans-serif; -->
 
       <div class="card-deck">
         <div class="card text-center">
-          <img
+          <img class="shop-item-image"
             src="https://images.unsplash.com/photo-1577036251102-9cf1285e487a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="font-family: 'Abril Fatface', cursive;">Dior</h5>
-            <p class="card-text">$15</p>
+            <h5 class="card-title shop-item-title" style="font-family: 'Abril Fatface', cursive;">Dior</h5>
+            <p class="card-text shop-item-price">$15</p>
             <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
-          <img
+          <img class="shop-item-image"
             src="https://images.unsplash.com/photo-1607339531726-e416aa37f134?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="font-family: 'Abril Fatface', cursive;">Fujifilm</h5>
-            <p class="card-text">$15</p>
+            <h5 class="card-title shop-item-title" style="font-family: 'Abril Fatface', cursive;">Fujifilm</h5>
+            <p class="card-text shop-item-price">$15</p>
             <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-            <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
+            <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
-          <img
+          <img class="shop-item-image"
             src="https://images.unsplash.com/photo-1580694500583-21a6189e6b56?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="font-family: 'Abril Fatface', cursive;">Beautify</h5>
-            <p class="card-text">$15</p>
+            <h5 class="card-title shop-item-title" style="font-family: 'Abril Fatface', cursive;">Beautify</h5>
+            <p class="card-text shop-item-price">$15</p>
             <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -184,36 +191,36 @@ font-family: 'Roboto', sans-serif; -->
 
       <div class="card-deck">
         <div class="card text-center">
-          <img
+          <img class="shop-item-image"
             src="https://images.unsplash.com/photo-1591375372232-d643b3bc8df4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title" style="font-family: 'Abril Fatface', cursive;">Givinchy</h5>
-            <p class="card-text">$15</p>
+            <h5 class="card-title shop-item-title" style="font-family: 'Abril Fatface', cursive;">Givinchy</h5>
+            <p class="card-text shop-item-price">$15</p>
               <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
-          <img
+          <img class="shop-item-image"
             src="https://images.unsplash.com/photo-1591375372232-d643b3bc8df4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title"style="font-family: 'Abril Fatface', cursive;">Givinchy</h5>
-            <p class="card-text">$15</p>
+            <h5 class="card-title shop-item-title"style="font-family: 'Abril Fatface', cursive;">Givinchy</h5>
+            <p class="card-text shop-item-price">$15</p>
             <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-            <button class="btn btn-dark btn-block hvr-outline-in"  type="button"id="btn" onclick="cot()">Add to Cart</button>
+            <button class="btn btn-dark btn-block hvr-outline-in shop-item-button"  type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
         <div class="card text-center">
-          <img
+          <img class="shop-item-image"
             src="https://images.unsplash.com/photo-1591375372232-d643b3bc8df4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
             class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title"style="font-family: 'Abril Fatface', cursive;">Givinchy</h5>
-            <p class="card-text">$15</p>
+            <h5 class="card-title shop-item-title"style="font-family: 'Abril Fatface', cursive;">Givinchy</h5>
+            <p class="card-text shop-item-price">$15</p>
               <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">View</button>
-              <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" onclick="cot()">Add to Cart</button>
+              <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"id="btn" onclick="cot()">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -241,12 +248,7 @@ font-family: 'Roboto', sans-serif; -->
 </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-</script>
+
 
 <script type="text/javascript">
   var btn = document.getElementById('btn');
