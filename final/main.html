@@ -170,7 +170,7 @@ font-family: 'Roboto', sans-serif; -->
                     <div class="card-body">
                         <h5 class="card-title shop-item-title" style="font-family: 'Abril Fatface', cursive;">Uncover Makeup Set</h5>
                         <p class="card-text shop-item-price">$25</p>
-                        <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn">View</button>
+                        <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" data-toggle="modal" data-target="#View-Modal-2">View</button>
                         <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"style="font-family: 'Roboto', sans-serif;"id="btn" onclick="cot()">Add to Cart</button>
                     </div>
                 </div>
@@ -179,7 +179,7 @@ font-family: 'Roboto', sans-serif; -->
                     <div class="card-body">
                         <h5 class="card-title shop-item-title"style="font-family: 'Abril Fatface', cursive;">Makeup Remover Set</h5>
                         <p class="card-text shop-item-price">$20</p>
-                        <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn">View</button>
+                        <button class="btn btn-dark btn-block hvr-outline-in" type="button"id="btn" data-toggle="modal" data-target="#View-Modal-3">View</button>
                         <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"style="font-family: 'Roboto', sans-serif;"id="btn" onclick="cot()">Add to Cart</button>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ font-family: 'Roboto', sans-serif; -->
 
 
 
-
+<!--Modal View Products section-->
   <div class="modal fade" id="View-Modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
@@ -263,7 +263,151 @@ font-family: 'Roboto', sans-serif; -->
 
 
 
+  <div class="modal fade" id="View-Modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div>
+          <img class="col-md-6 shop-item-image" src="https://images.unsplash.com/photo-1559828350-dbd975c52096?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"  style="float: left; margin-top: 50px; margin-left: 30px;
+          margin-right: 20px;">
+          <div class="view-modal" style="display: inline-block; margin-top: 20px; margin-bottom: 20px;">
+            <strong class="shop-item-title" style="font-size:25px;">Uncover Makeup Set</strong>
+            <p class="shop-item-price" style="margin-top: 20px;
+            margin-bottom: 25px;">$25</p>
+            <div style="margin-bottom: 20px;">
+            <p>Quantity</p> <input class="cart-quantity-input" type="number" value="1" style="margin-bottom: 10px; width: 40px;">
+            </div>
+            <strong>Details</strong>
+            <p style="width: 235px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum metus non est interdum semper. Curabitur facilisis massa vitae bibendum dictum. Etiam fermentum ultrices nunc nec gravida.</p>
+            <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"style="font-family: 'Roboto', sans-serif;"id="btn" onclick="cot()">Add to Cart</button>
+          </div>
 
+          <div style="margin-top: 90px;">
+            <div style="margin-left: 50px;">
+            <h5>Customer Reviews</h5>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <div style="margin: 50px;">
+                <img class="col-sm-2" src="https://icon-library.com/images/blank-person-icon/blank-person-icon-0.jpg" style="float: left; border-radius: 50%;">
+                <h7>Customer</h7>
+                <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+                    
+                <p style="float: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum metus non est interdum semper. Curabitur facilisis massa vitae bibendum dictum. Etiam fermentum ultrices nunc nec gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum metus non est interdum semper. Curabitur facilisis massa vitae bibendum dictum. Etiam fermentum ultrices nunc nec gravida.</p>
+            </div>
+                <div style="margin: 50px;">
+                <img style="float: left; border-radius: 50%;" class="col-sm-2" src="https://icon-library.com/images/blank-person-icon/blank-person-icon-0.jpg">
+                <h7>Customer</h7>
+                <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+
+                <p style="float: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum metus non est interdum semper. Curabitur facilisis massa vitae bibendum dictum. Etiam fermentum ultrices nunc nec gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum metus non est interdum semper. Curabitur facilisis massa vitae bibendum dictum. Etiam fermentum ultrices nunc nec gravida.</p>
+            </div>
+            
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="modal fade" id="View-Modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div>
+          <img class="col-md-6 shop-item-image" src="https://images.unsplash.com/photo-1588959396534-db4a48af6b04?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"   style="float: left; margin-top: 50px; margin-left: 30px;
+          margin-right: 20px;">
+          <div class="view-modal" style="display: inline-block; margin-top: 20px; margin-bottom: 20px;">
+            <strong class="shop-item-title" style="font-size:25px;">Makeup Remover Set</strong>
+            <p class="shop-item-price" style="margin-top: 20px;
+            margin-bottom: 25px;">$20</p>
+            <div style="margin-bottom: 20px;">
+            <p>Quantity</p> <input class="cart-quantity-input" type="number" value="1" style="margin-bottom: 10px; width: 40px;">
+            </div>
+            <strong>Details</strong>
+            <p style="width: 235px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum metus non est interdum semper. Curabitur facilisis massa vitae bibendum dictum. Etiam fermentum ultrices nunc nec gravida.</p>
+            <button class="btn btn-dark btn-block hvr-outline-in shop-item-button" type="button"style="font-family: 'Roboto', sans-serif;"id="btn" onclick="cot()">Add to Cart</button>
+          </div>
+
+          <div style="margin-top: 90px;">
+            <div style="margin-left: 50px;">
+            <h5>Customer Reviews</h5>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <div style="margin: 50px;">
+                <img class="col-sm-2" src="https://icon-library.com/images/blank-person-icon/blank-person-icon-0.jpg" style="float: left; border-radius: 50%;">
+                <h7>Customer</h7>
+                <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+                    
+                <p style="float: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum metus non est interdum semper. Curabitur facilisis massa vitae bibendum dictum. Etiam fermentum ultrices nunc nec gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum metus non est interdum semper. Curabitur facilisis massa vitae bibendum dictum. Etiam fermentum ultrices nunc nec gravida.</p>
+            </div>
+                <div style="margin: 50px;">
+                <img style="float: left; border-radius: 50%;" class="col-sm-2" src="https://icon-library.com/images/blank-person-icon/blank-person-icon-0.jpg">
+                <h7>Customer</h7>
+                <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                </div>
+
+                <p style="float: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum metus non est interdum semper. Curabitur facilisis massa vitae bibendum dictum. Etiam fermentum ultrices nunc nec gravida.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum metus non est interdum semper. Curabitur facilisis massa vitae bibendum dictum. Etiam fermentum ultrices nunc nec gravida.</p>
+            </div>
+            
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--end of modal-->
 
 
 
