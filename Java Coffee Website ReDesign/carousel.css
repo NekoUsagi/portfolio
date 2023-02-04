@@ -59,6 +59,13 @@ body {
 
 /* rtl:end:remove */
 
+.btn-secondary{
+  --bs-btn-bg: #c4a473;
+  --bs-btn-border-color: none;
+}
+
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
