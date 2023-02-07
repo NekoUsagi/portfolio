@@ -8,6 +8,31 @@ body {
   color: #5a5a5a;
 }
 
+.bg-light {
+  background-color: #c4a473 !important;
+}
+
+main {
+  background-color: antiquewhite;
+  color: #392418;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+
+/* NAVBAR CUSTOMIZE */
+
+.nav-item {
+  margin: 0 20px 0 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -55,15 +80,24 @@ body {
 /* rtl:begin:remove */
 .featurette-heading {
   letter-spacing: -.05rem;
+  margin-top: 3rem !important;
+  margin-left: 1rem !important;
+}
+
+.featurette-image {
+ width: fit-content;
 }
 
 /* rtl:end:remove */
 
 .btn-secondary{
-  --bs-btn-bg: #c4a473;
+  --bs-btn-bg: #794e35;
   --bs-btn-border-color: none;
 }
 
+.fw-normal {
+  font-weight: 500 !important;
+}
 
 
 /* RESPONSIVE CSS
