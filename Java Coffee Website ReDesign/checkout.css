@@ -1,3 +1,33 @@
 .container {
   max-width: 960px;
 }
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+.bg-light {
+  background-color: #c4a473 !important;
+}
+
+main {
+  background-color: antiquewhite;
+  color: #392418;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+
+/* NAVBAR CUSTOMIZE */
+
+.nav-item {
+  margin: 0 20px 0 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
