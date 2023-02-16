@@ -17,6 +17,7 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: #5a5a5a;
+    background-color: antiquewhite;
   }
   
   .bg-light {
@@ -31,6 +32,15 @@
   
   h1 {
     font-weight: 700;
+    text-align: center;
+  }
+
+  .mb-3 {
+    width: 50%;
+  }
+
+  form {
+    text-align: -webkit-center;
   }
   
   
