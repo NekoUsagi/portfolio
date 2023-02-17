@@ -95,6 +95,11 @@ h1 {
   --bs-btn-border-color: none;
 }
 
+.btn-primary {
+  --bs-btn-bg: #392418;
+  --bs-btn-border-color: none;
+}
+
 .fw-normal {
   font-weight: 500 !important;
 }

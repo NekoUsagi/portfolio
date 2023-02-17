@@ -106,26 +106,176 @@
         </li>
         </ul>
         <div class="justify-content-md-end">
-          <a class="nav-link d-flex" href="..."> <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" fill="currentColor" class="bi bi-credit-card-2-back-fill" viewBox="0 0 16 16" style="color:antiquewhite;">
+          <a class="nav-link d-flex" href="..." data-bs-toggle="modal" data-bs-target="#exampleModal"> <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" fill="currentColor" class="bi bi-credit-card-2-back-fill" viewBox="0 0 16 16" style="color:antiquewhite;">
             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2zM0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"/>
           </svg></a>
       </div>
         <div class="justify-content-md-end">
-          <a class="nav-link d-flex" href="..."> <svg xmlns="http://www.w3.org/2000/svg" width="60" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16" style="color:antiquewhite;">
+          <a class="nav-link d-flex" href="..." data-bs-toggle="modal" data-bs-target="#exampleModal2"> <svg xmlns="http://www.w3.org/2000/svg" width="60" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16" style="color:antiquewhite;">
             <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
           </svg></a>
       </div>
     <div class="justify-content-md-end">
-      <a class="nav-link d-flex" href="account.html"> <svg xmlns="http://www.w3.org/2000/svg" width="60" height="35" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16" style="color:antiquewhite;">
+      <a class="nav-link d-flex" href="..." data-bs-toggle="modal" data-bs-target="#exampleModal4"> <svg xmlns="http://www.w3.org/2000/svg" width="60" height="35" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16" style="color:antiquewhite;">
         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
       </svg></a>
     </div>
     <div class="justify-content-md-end">
-      <a class="nav-link d-flex" href="cart.css"> <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16" style="color:antiquewhite;">
+      <a class="nav-link d-flex" href="..." data-bs-toggle="modal" data-bs-target="#exampleModal3" > <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16" style="color:antiquewhite;">
         <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
       </svg></a>
     </div>
   </nav>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Gift Card</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          The perfect gift for those who really enjoy fresh premium coffee. You can't go wrong with a gift card. Choose an amount and write a personalized message to make this gift your own.
+        </div>
+
+        <div class="modal-body">
+          <form>
+           <div> 
+            <label>Amount:</label>
+
+            <select>
+              <option>$25</option>
+              <option>$50</option>
+              <option>$75</option>
+              <option>$100</option>
+              <option>$150</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Recipient Email">
+          </div>
+
+          <div>
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Recipient Name">
+          </div>
+
+            <div>
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+          </form>
+
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+ <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Wishlist</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+ <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="35" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16" style="color:antiquewhite; margin-left:5.4cm;">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+          </svg>
+        </div>
+
+        <div class="modal-body">
+        <form>
+          <div>
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+          </div>
+
+          <div>
+            <label for="exampleFormControlInput1" class="form-label"></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+          </div>
+
+          <div>
+            <p style="text-align: center; margin-top: 20px;">Don't Have an Account? <a href="sign-up.html">Sign Up Here</a></p>
+          </div>
+
+        </div>
+
+      </form>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 </header>
 
 <main>
