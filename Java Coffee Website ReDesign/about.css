@@ -67,6 +67,13 @@ body {
     font-weight: 500 !important;
   }
   
+
+  .footer {
+    max-width: 100% !important;
+    background-color: #c4a473;
+    color: white;
+    padding: 20px 0 20px 30px;
+  }
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */

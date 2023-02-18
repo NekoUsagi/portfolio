@@ -4,7 +4,6 @@
 
 body {
   padding-top: 3rem;
-  padding-bottom: 3rem;
   color: #5a5a5a;
 }
 
@@ -104,6 +103,12 @@ h1 {
   font-weight: 500 !important;
 }
 
+.footer {
+  max-width: 100% !important;
+  background-color: #c4a473;
+  color: white;
+  padding: 20px 0 20px 30px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
