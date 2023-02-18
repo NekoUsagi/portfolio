@@ -57,6 +57,7 @@ body {
   
   .featurette-image {
    width: fit-content;
+   margin-top: 14%;
   }
   
   /* rtl:end:remove */
