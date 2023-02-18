@@ -12,6 +12,10 @@ body {
   background-color: #c4a473 !important;
 }
 
+.text-bg-dark {
+  background-color: #794e35 !important;
+}
+
 main {
   background-color: antiquewhite;
   color: #392418;
@@ -84,11 +88,34 @@ h1 {
   background-color: #e5e5e5;
 }
 
+.btn-primary {
+  --bs-btn-bg: #392418;
+  --bs-btn-border-color: none;
+}
+
+.btn-secondary{
+  --bs-btn-bg: #794e35;
+  --bs-btn-border-color: none;
+}
+
 .footer {
   max-width: 100% !important;
   background-color: #c4a473;
   color: white;
   padding: 20px 0 20px 30px;
+}
+
+.product {
+  width: 100%;
+  border-radius: inherit;
+}
+
+.shadow-sm {
+  height: fit-content !important;
+}
+
+.overflow-hidden {
+  border-radius: 30px;
 }
 
 
