@@ -15,7 +15,6 @@
   
   body {
     padding-top: 3rem;
-    padding-bottom: 3rem;
     color: #5a5a5a;
     background-color: antiquewhite;
   }
@@ -59,4 +58,15 @@
     background-color: #c4a473;
     color: white;
     padding: 20px 0 20px 30px;
+    margin-top: 20%;
+  }
+
+  .btn-primary {
+    --bs-btn-bg: #392418;
+    --bs-btn-border-color: none;
+  }
+  
+  .btn-secondary{
+    --bs-btn-bg: #794e35;
+    --bs-btn-border-color: none;
   }

@@ -3,9 +3,12 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    padding: 200px 100px 0 100px;
     color: #c4a473;
     background: antiquewhite;
+  }
+
+  main {
+    padding: 200px 100px 0 100px;
   }
   
   .bg-light {
@@ -73,6 +76,17 @@ body {
     background-color: #c4a473;
     color: white;
     padding: 20px 0 20px 30px;
+  }
+
+
+  .btn-primary {
+    --bs-btn-bg: #392418;
+    --bs-btn-border-color: none;
+  }
+  
+  .btn-secondary{
+    --bs-btn-bg: #794e35;
+    --bs-btn-border-color: none;
   }
   
   /* RESPONSIVE CSS
