@@ -79,6 +79,8 @@
     
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+    <script src="cart.js" async></script>
+    <script src="wishlist.js"></script>
   </head>
   <body>
     
@@ -195,9 +197,15 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
+
+          <div class="wish-items">
+            <div class="wish-row"></div>
+
+          </div>
+      
+          </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -209,21 +217,27 @@
 
 
  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a class="btn btn-primary" href="checkout.html" >Checkout</a>
-        </div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">My Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+  <div class="cart-items">        
+      
+  </div>
+</div>
+      
+      <div class="cart-total text-right pr-1 pr-md-3 pr-lg-5"><strong class="cart-total-title">Total: </strong> <span class="cart-total-price">$0</span></div>
+      <div class="modal-footer">
+        <a href="checkout.html" type="button" class="btn btn-dark">Checkout</a>
       </div>
     </div>
   </div>
+</div>
 
 
 
@@ -333,8 +347,41 @@
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
-    <div class="text-center">
+    
+    <div class="text-center" style="display: inline-flex;background-color: white;
+    padding: 40px 0px 35px 0;
+    border-radius: 30px;">
+
+      
+
+      <svg style="width: 200px; height:40px; float:left;margin-top:10px; transform:rotate(20deg);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z"/>
+      </svg>
+
+      <svg style="width: 40px; height:40px; float:left;margin-top:10px; transform:rotate(-15deg);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9ZM1.124 4l1.516 6.825A1.5 1.5 0 0 0 4.104 12h5.792a1.5 1.5 0 0 0 1.464-1.175L12.877 4H1.123Z"/>
+      </svg>
+
+
+      <svg style="width: 200px; height:40px; float:left;margin-top:10px;transform:rotate(15deg);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z"/>
+      </svg>
+
       <h1>Monthly Special Sale</h1>
+
+      <svg style="width: 200px; height:40px; float:right; margin-top:10px; transform:rotate(-15deg);"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z"/>
+      </svg>
+
+      <svg style="width: 40px; height:40px; float:right;margin-top:10px; transform:rotate(20deg);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9ZM1.124 4l1.516 6.825A1.5 1.5 0 0 0 4.104 12h5.792a1.5 1.5 0 0 0 1.464-1.175L12.877 4H1.123Z"/>
+      </svg>
+
+
+      <svg style="width: 200px; height:40px; float:right; margin-top:10px; transform:rotate(-20deg);"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z"/>
+      </svg>
+
     </div>
     <hr class="featurette-divider">
 
@@ -415,8 +462,40 @@
 
       <!-- Three columns of text below the carousel -->
 
-      <div class="text-center">
-        <h1>Best Sellers</h1>
+      <div class="text-center" style="display: inline-flex; margin: 0 8% 0 6%;     background-color: white;
+      padding: 40px 0px 35px 0;
+      border-radius: 30px;">
+
+      
+
+        <svg style="width: 200px; height:40px; float:left;margin-top:10px; transform:rotate(20deg);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z"/>
+        </svg>
+  
+        <svg style="width: 40px; height:40px; float:left;margin-top:10px; transform:rotate(-15deg);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9ZM1.124 4l1.516 6.825A1.5 1.5 0 0 0 4.104 12h5.792a1.5 1.5 0 0 0 1.464-1.175L12.877 4H1.123Z"/>
+        </svg>
+  
+  
+        <svg style="width: 200px; height:40px; float:left;margin-top:10px;transform:rotate(15deg);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z"/>
+        </svg>
+  
+        <h1>Best Seller</h1>
+  
+        <svg style="width: 200px; height:40px; float:right; margin-top:10px; transform:rotate(-15deg);"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z"/>
+        </svg>
+  
+        <svg style="width: 40px; height:40px; float:right;margin-top:10px; transform:rotate(20deg);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9ZM1.124 4l1.516 6.825A1.5 1.5 0 0 0 4.104 12h5.792a1.5 1.5 0 0 0 1.464-1.175L12.877 4H1.123Z"/>
+        </svg>
+  
+  
+        <svg style="width: 200px; height:40px; float:right; margin-top:10px; transform:rotate(-20deg);"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M.11 3.187A.5.5 0 0 1 .5 3h13a.5.5 0 0 1 .488.608l-.22.991a3.001 3.001 0 0 1-1.3 5.854l-.132.59A2.5 2.5 0 0 1 9.896 13H4.104a2.5 2.5 0 0 1-2.44-1.958L.012 3.608a.5.5 0 0 1 .098-.42Zm12.574 6.288a2 2 0 0 0 .866-3.899l-.866 3.9Z"/>
+        </svg>
+  
       </div>
       <hr class="featurette-divider">
 
@@ -453,21 +532,21 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="img/mockup-graphics-m7ijvnNGaV0-unsplash.jpg" style="width: -webkit-fill-available;">
+          <img class="shop-item-image  wish-item-image" src="img/mockup-graphics-m7ijvnNGaV0-unsplash.jpg" style="width: -webkit-fill-available;">
         </div>
 
         <div style="text-align: center;" >
-          <h2>Bavarian Chocolate</h2>
+          <h2 class="shop-item-title  wish-item-title">Bavarian Chocolate</h2>
 
-          <p style="margin: 20px 0 20px 0;"><del>$13.70</del> $10.95</p>
+          <p style="margin: 20px 0 20px 0;" class="shop-item-price  wish-item-price">$10.95</p>
 
           <p style="margin: 20px 30px 10px 30px;" >Luscious flavors of vanilla, fresh whipped cream, and chocolate in one dreamy cup that settles comfortably into your soul. Bavarian Chocolate is a sophisticated blend of the classic dessert, chocolate cake and bakery staples, bavarian cream and freshly-brewed coffee.
           </p>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Add to Wishlist</button>
-          <button type="button" class="btn btn-primary">Add to Cart</button>
+          <button type="button" class="btn btn-primary  wish-item-button">Add to Wishlist</button>
+          <button type="button" class="btn btn-primary shop-item-button">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -484,21 +563,21 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="img/phil-desforges-fjrl9YBYEL0-unsplash.jpg" style="width: -webkit-fill-available;">
+          <img class="shop-item-image  wish-item-image" src="img/phil-desforges-fjrl9YBYEL0-unsplash.jpg" style="width: -webkit-fill-available;">
         </div>
 
         <div style="text-align: center;" >
-          <h2>Kona Blend</h2>
+          <h2 class="shop-item-title  wish-item-title">Kona Blend</h2>
 
-          <p style="margin: 20px 0 20px 0;"><del>$15.35</del> $12.25</p>
+          <p class="shop-item-price  wish-item-price" style="margin: 20px 0 20px 0;">$12.25</p>
 
           <p style="margin: 20px 30px 10px 30px;" >Kona Blend is a combination of Big Island’s finest estate coffees. Grown in the rich volcanic soil on the shallow slopes of Mauna Loa, these beans have a mild, pleasant flavor that is rich with fruity notes and finishes with a clean aftertaste. Such a smooth and mellow blend that will fit right in to your afternoon routine!
           </p>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Add to Wishlist</button>
-          <button type="button" class="btn btn-primary">Add to Cart</button>
+          <button type="button" class="btn btn-primary  wish-item-button">Add to Wishlist</button>
+          <button type="button" class="btn btn-primary shop-item-button">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -515,21 +594,21 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="img/miles-burke-Y04TV_N7aZo-unsplash.jpg" style="width: -webkit-fill-available;">
+          <img class="shop-item-image  wish-item-image" src="img/miles-burke-Y04TV_N7aZo-unsplash.jpg" style="width: -webkit-fill-available;">
         </div>
 
         <div style="text-align: center;" >
-          <h2>Costa Rica Tarrazu</h2>
+          <h2 class="shop-item-title  wish-item-title">Costa Rica Tarrazu</h2>
 
-          <p style="margin: 20px 0 20px 0;"><del>$12.40</del> $9.90</p>
+          <p class="shop-item-price wish-item-price" style="margin: 20px 0 20px 0;">$9.90</p>
 
           <p style="margin: 20px 30px 10px 30px;" >Costa Rica Tarrazu is a “strictly hard bean” coffee that has an unadulterated coffee flavor that is clean, mild, and wonderfully acidic. Right off the grinder, this coffee is fragrant with the fresh smell of apricots and peaches. While mild roasts are known to have a delicate sweetness likened to gingersnap cookies, darker roasts on the other hand boast of a little more depth and spice both in aroma and flavor. Light and delicious.
           </p>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Add to Wishlist</button>
-          <button type="button" class="btn btn-primary">Add to Cart</button>
+          <button type="button" class="btn btn-primary wish-item-button">Add to Wishlist</button>
+          <button type="button" class="btn btn-primary shop-item-button">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -548,21 +627,21 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="img/miles-burke-Y04TV_N7aZo-unsplash.jpg" style="width: -webkit-fill-available;">
+          <img class="shop-item-image wish-item-image" src="img/miles-burke-Y04TV_N7aZo-unsplash.jpg" style="width: -webkit-fill-available;">
         </div>
 
         <div style="text-align: center;" >
-          <h2>Columbian Supremo</h2>
+          <h2 class="shop-item-title wish-item-title">Columbian Supremo</h2>
 
-          <p style="margin: 20px 0 20px 0;">$12.15</p>
+          <p class="shop-item-price wish-item-price" style="margin: 20px 0 20px 0;">$12.15</p>
 
           <p style="margin: 20px 30px 10px 30px;" >Colombian Supremo Coffee is a distinct type of coffee renowned for its rich flavor and bold aroma. Grown in the Colombian mountains, Colombian Supremo Coffee beans are hand-picked to ensure only the best cherries make it into the blend. This full-bodied coffee is smooth and flavorful with hints of smokiness and faint notes of sweet caramel that linger on your tongue.
           </p>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Add to Wishlist</button>
-          <button type="button" class="btn btn-primary">Add to Cart</button>
+          <button type="button" class="btn btn-primary wish-item-button">Add to Wishlist</button>
+          <button type="button" class="btn btn-primary shop-item-button">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -580,21 +659,21 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="img/petr-sidorov-T9yWxecVV2Q-unsplash.jpg" style="width: -webkit-fill-available;">
+          <img class="shop-item-image  wish-item-image" src="img/petr-sidorov-T9yWxecVV2Q-unsplash.jpg" style="width: -webkit-fill-available;">
         </div>
 
         <div style="text-align: center;" >
-          <h2>Keemun Hao Ya A</h2>
+          <h2 class="shop-item-title  wish-item-title">Keemun Hao Ya A</h2>
 
-          <p style="margin: 20px 0 20px 0;">$91.20</p>
+          <p class="shop-item-price  wish-item-price" style="margin: 20px 0 20px 0;">$91.20</p>
 
           <p style="margin: 20px 30px 10px 30px;" >Beautiful twisted thin leaves, distinctive fragrance, poetically described as a wilting black rose or less poetically as “toast hot from the oven” either way very rich and complex! It is the only sub-variety of the tea plant in which an essential oil called myrcenal is found. Myrcenal also occurs Bay Leaves, and it is believed it is this oil that gives Keemun its indescribable sweetness. 
           </p>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Add to Wishlist</button>
-          <button type="button" class="btn btn-primary">Add to Cart</button>
+          <button type="button" class="btn btn-primary wish-item-button">Add to Wishlist</button>
+          <button type="button" class="btn btn-primary shop-item-button">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -611,21 +690,21 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="img/mockup-graphics-m7ijvnNGaV0-unsplash.jpg" style="width: -webkit-fill-available;">
+          <img class="shop-item-image  wish-item-image" src="img/mockup-graphics-m7ijvnNGaV0-unsplash.jpg" style="width: -webkit-fill-available;">
         </div>
 
         <div style="text-align: center;" >
-          <h2>Ethiopian Sidamo</h2>
+          <h2 class="shop-item-title  wish-item-title">Ethiopian Sidamo</h2>
 
-          <p style="margin: 20px 0 20px 0;">$13.00</p>
+          <p class="shop-item-price  wish-item-price" style="margin: 20px 0 20px 0;">$13.00</p>
 
           <p style="margin: 20px 30px 10px 30px;" >If you would like a smooth, light-medium roasted coffee with a warm and resonating flavor, then you'll be pleased with this organic Ethiopian coffee.Discovered in the Kaffa region of Ethiopia, these coffee beans are known and loved for their unique flavor. With a mild spicy kick and a wine-like essence that finishes with a floral aroma, this clean tasting coffee glides over your palate with an almost sweet aftertaste. Hand harvested and dry processed, this coffee has a very unique flavor profile that you will thoroughly enjoy.
           </p>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Add to Wishlist</button>
-          <button type="button" class="btn btn-primary">Add to Cart</button>
+          <button type="button" class="btn btn-primary wish-item-button">Add to Wishlist</button>
+          <button type="button" class="btn btn-primary shop-item-button">Add to Cart</button>
         </div>
       </div>
     </div>

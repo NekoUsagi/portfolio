@@ -79,6 +79,8 @@
     
     <!-- Custom styles for this template -->
     <link href="product.css" rel="stylesheet">
+    <script src="cart.js" async></script>
+    <script src="wishlist.js" async></script>
   </head>
   <body>
     
@@ -195,9 +197,14 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+    
+              <div class="wish-items">
+    
+              </div>
+          
+              </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
@@ -209,21 +216,27 @@
     
     
      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Cart</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <a class="btn btn-primary" href="checkout.html" >Checkout</a>
-            </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">My Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+    
+          <div class="modal-body">
+    
+      <div class="cart-items">        
+          
+      </div>
+    </div>
+          
+          <div class="cart-total text-right pr-1 pr-md-3 pr-lg-5"><strong class="cart-total-title">Total: </strong> <span class="cart-total-price">$0</span></div>
+          <div class="modal-footer">
+            <a href="checkout.html" type="button" class="btn btn-dark">Checkout</a>
           </div>
         </div>
       </div>
+    </div>
     
     
     
@@ -369,21 +382,21 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <img src="img/mockup-graphics-m7ijvnNGaV0-unsplash.jpg" style="width: -webkit-fill-available;">
+          <img class="shop-item-image  wish-item-image" src="img/mockup-graphics-m7ijvnNGaV0-unsplash.jpg" style="width: -webkit-fill-available;">
         </div>
 
         <div style="text-align: center;" >
-          <h2>Viennese Blend</h2>
+          <h2 class="shop-item-title  wish-item-title">Viennese Blend</h2>
 
-          <p style="margin: 20px 0 20px 0;">$12.40</p>
+          <p class="shop-item-price  wish-item-price" style="margin: 20px 0 20px 0;">$12.40</p>
 
           <p style="margin: 20px 30px 10px 30px;" >A blend of full city roast and dark roast coffee beans, Viennese blend features the spicy sparkle and sharpness of Central and South American coffees and the robust aromas of our French Roast.
           </p>
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Add to Wishlist</button>
-          <button type="button" class="btn btn-primary">Add to Cart</button>
+          <button type="button" class="btn btn-primary wish-item-button">Add to Wishlist</button>
+          <button type="button" class="btn btn-primary shop-item-button">Add to Cart</button>
         </div>
       </div>
     </div>
